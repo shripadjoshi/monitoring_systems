@@ -38,7 +38,8 @@ group :development do
 end
 
 gem 'devise'
-
+#gem 'bootstrap-sass'
+gem 'anjlab-bootstrap-rails', '>= 3.0.0.0', :require => 'bootstrap-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
