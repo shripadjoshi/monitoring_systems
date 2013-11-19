@@ -3,7 +3,7 @@
     <li><a href="<%= root_path %>"><span>Home</span></a></li>
     <% if user_signed_in? %>
       <li class='has-sub'>
-      <a href="javascript:void(0)"><span><%= current_user.name.capitalize %></span></a>
+      <a href="javascript:void(0)"><span>Currently login as: <%= current_user.name.capitalize %></span></a>
       <ul>
         <li>
           <a href="<%= edit_user_registration_path %>"><span>Edit account</span></a>
