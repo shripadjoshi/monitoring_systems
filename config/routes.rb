@@ -1,5 +1,6 @@
 MonitoringSystems::Application.routes.draw do
  
+  
   # You can have the root of your site routed with "root"
   #authenticated :user do
   #  root to: 'homes#index'
@@ -10,7 +11,7 @@ MonitoringSystems::Application.routes.draw do
     #get "d/users/sign_in" => "users/sessions#new", as: :new_user_session
     #get "d/users/sign_out" => "devise/sessions#destroy", as: :destroy_user_session
   #end
-  #resources :users, except: [:show, :destroy]
+  resources :users, except: [:show, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

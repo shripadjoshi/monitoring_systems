@@ -1,0 +1,23 @@
+<fieldset>
+  <legend> Users List</legend>
+  <div align="right"><%= link_to "Create User", new_user_path %></div>
+  <table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+      <!--<th>Active</th>-->
+      <th data-sorter="false">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<%= render @users %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="5"><%= pluralize(@users.size, 'user') %></td>
+    </tr>
+  </tfoot>
+</table>
+</fieldset>

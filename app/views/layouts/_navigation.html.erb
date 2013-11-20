@@ -1,6 +1,7 @@
 <div id="cssmenu">
   <ul>
     <li><a href="<%= root_path %>"><span>Home</span></a></li>
+    <li><a href="<%= users_path %>"><span>Users</span></a></li>
     <% if user_signed_in? %>
       <li class='has-sub'>
       <a href="javascript:void(0)"><span>Currently login as: <%= current_user.name.capitalize %></span></a>
